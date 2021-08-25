@@ -1,7 +1,7 @@
 {
   "name": "@omnifire/api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Consistent API layer to adapt Firebase libraries.",
   "author": "",
   "license": "ISC",
   "main": "dist/index.js",

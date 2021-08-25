@@ -1,7 +1,7 @@
 {
   "name": "@omnifire/web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Implementation of the Omnifire consistent API layer for Firebase JS SDK.",
   "author": "",
   "license": "ISC",
   "main": "dist/index.js",

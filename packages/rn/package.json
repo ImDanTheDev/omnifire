@@ -1,7 +1,7 @@
 {
   "name": "@omnifire/rn",
   "version": "1.0.0",
-  "description": "",
+  "description": "Implementation of the Omnifire consistent API layer for @react-native-firebase.",
   "author": "",
   "license": "ISC",
   "main": "dist/index.js",
