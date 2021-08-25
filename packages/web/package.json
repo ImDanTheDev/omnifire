@@ -1,0 +1,29 @@
+{
+  "name": "@omnifire/web",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@omnifire/api": "../api"
+  },
+  "devDependencies": {
+    "@omnifire/api": "../api",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "firebase": "^8.10.0"
+  }
+}

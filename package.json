@@ -1,0 +1,15 @@
+{
+  "name": "omnifire-wrapper",
+  "private": true,
+  "scripts": {
+    "build": "lerna run --scope @omnifire/* build"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
