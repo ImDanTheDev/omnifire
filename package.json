@@ -1,7 +1,10 @@
 {
   "name": "omnifire-wrapper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Monorepo for Omnifire",
+  "repository": {
+    "url": "https://github.com/ImDanTheDev/omnifire"
+  },
   "private": true,
   "scripts": {
     "build": "lerna run --scope @omnifire/* build"

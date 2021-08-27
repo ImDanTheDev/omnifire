@@ -3,3 +3,4 @@ export {
     OFFirebase
 };
 export * from './firestore';
+export * from './auth';

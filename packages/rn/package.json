@@ -1,9 +1,12 @@
 {
   "name": "@omnifire/rn",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Implementation of the Omnifire consistent API layer for @react-native-firebase.",
   "author": "",
   "license": "ISC",
+  "repository": {
+    "url": "https://github.com/ImDanTheDev/omnifire"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,14 +20,16 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@omnifire/api": "../api"
+    "@react-native-google-signin/google-signin": "^7.0.0-alpha.1"
   },
   "devDependencies": {
-    "@omnifire/api": "../api",
-    "typescript": "^4.3.5"
+    "typescript": "^3.8.3",
+    "@react-native-google-signin/google-signin": "^7.0.0-alpha.1"
   },
   "dependencies": {
+    "@omnifire/api": "../api",
     "@react-native-firebase/app": "^12.1.0",
+    "@react-native-firebase/auth": "^12.1.0",
     "@react-native-firebase/firestore": "^12.1.0"
   }
 }
