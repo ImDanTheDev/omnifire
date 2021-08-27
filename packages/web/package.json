@@ -4,6 +4,9 @@
   "description": "Implementation of the Omnifire consistent API layer for Firebase JS SDK.",
   "author": "",
   "license": "ISC",
+  "repository": {
+    "url": "https://github.com/ImDanTheDev/omnifire"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
