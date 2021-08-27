@@ -3,3 +3,4 @@ export {
     IFirebase
 };
 export * from './firestore';
+export * from './auth';

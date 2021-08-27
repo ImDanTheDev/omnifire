@@ -1,6 +1,6 @@
 {
   "name": "@omnifire/api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Consistent API layer to adapt Firebase libraries.",
   "author": "",
   "license": "ISC",
@@ -12,8 +12,6 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json"
-  },
-  "peerDependencies": {
   },
   "publishConfig": {
     "access": "public"
