@@ -1,6 +1,6 @@
 {
   "name": "@omnifire/web",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Implementation of the Omnifire consistent API layer for Firebase JS SDK.",
   "author": "",
   "license": "ISC",
@@ -19,14 +19,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "peerDependencies": {
-    "@omnifire/api": "../api"
-  },
   "devDependencies": {
-    "@omnifire/api": "../api",
+    "@omnifire/api": "^1.1.2",
     "typescript": "^4.3.5"
   },
   "dependencies": {
     "firebase": "^8.10.0"
+  },
+  "peerDependencies": {
+    "@omnifire/api": "^1.1.2"
   }
 }

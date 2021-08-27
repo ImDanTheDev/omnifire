@@ -1,4 +1,3 @@
-import firebase from "@react-native-firebase/app";
 import { IFirebase } from "@omnifire/api";
 
 export default class OFFirebase implements IFirebase {
