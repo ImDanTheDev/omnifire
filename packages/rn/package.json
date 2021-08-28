@@ -21,14 +21,32 @@
   },
   "peerDependencies": {
     "@omnifire/api": "^1.1.2",
-    "@react-native-google-signin/google-signin": "^7.0.0-alpha.1"
+    "@react-native-google-signin/google-signin": "^7.0.0-alpha.1",
+    "@react-native-firebase/app": "^12.1.0",
+    "@react-native-firebase/auth": "^12.1.0",
+    "@react-native-firebase/firestore": "^12.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@omnifire/api": {
+      "optional": false
+    },
+    "@react-native-google-signin/google-signin": {
+      "optional": true
+    },
+    "@react-native-firebase/app": {
+      "optional": false
+    },
+    "@react-native-firebase/auth": {
+      "optional": true
+    },
+    "@react-native-firebase/firestore": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@omnifire/api": "^1.1.2",
     "@react-native-google-signin/google-signin": "^7.0.0-alpha.1",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
+    "typescript": "^3.8.3",
     "@react-native-firebase/app": "^12.1.0",
     "@react-native-firebase/auth": "^12.1.0",
     "@react-native-firebase/firestore": "^12.1.0"
