@@ -1,4 +1,5 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
+import 'firebase/firestore';
 import { IDocumentChange, IQueryDocumentSnapshot, IQuerySnapshot, OFDocumentData, OFSnapshotListenOptions } from "@omnifire/api";
 import OFQueryDocumentSnapshot from "./OFQueryDocumentSnapshot";
 import OFDocumentChange from "./OFDocumentChange";

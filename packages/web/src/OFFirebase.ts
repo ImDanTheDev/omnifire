@@ -1,4 +1,4 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
 import { IFirebase } from "@omnifire/api";
 
 export default class OFFirebase implements IFirebase {

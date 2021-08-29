@@ -1,7 +1,6 @@
-import { IFirestore, OFDocumentData } from '@omnifire/api';
-
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import { IFirestore, OFDocumentData } from '@omnifire/api';
 import OFCollectionReference from './OFCollectionReference';
 
 export default class OFFirestore implements IFirestore {
