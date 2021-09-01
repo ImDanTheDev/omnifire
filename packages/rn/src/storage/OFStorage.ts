@@ -1,4 +1,4 @@
-import {FirebaseStorageTypes} from '@react-native-firebase/storage';
+import storage, {FirebaseStorageTypes} from '@react-native-firebase/storage';
 import { IReference, IStorage } from "@omnifire/api";
 import OFReference from './OFReference';
 
@@ -6,8 +6,8 @@ export default class OFStorage implements IStorage {
 
     private readonly rnStorage: FirebaseStorageTypes.Module;
 
-    constructor(rnStorage: FirebaseStorageTypes.Module) {
-        this.rnStorage = rnStorage;
+    constructor() {
+        this.rnStorage = storage();
     }
 
     ref(path: string): IReference {
