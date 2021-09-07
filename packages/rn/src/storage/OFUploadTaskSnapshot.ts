@@ -2,6 +2,7 @@ import {FirebaseStorageTypes} from '@react-native-firebase/storage';
 import { IReference, IUploadTask, IUploadTaskSnapshot } from "@omnifire/api";
 import OFReference from './OFReference';
 import OFUploadTask from './OFUploadTask';
+import { toOFReference, toOFUploadTask } from './utils';
 
 export default class OFUploadTaskSnapshot implements IUploadTaskSnapshot {
     private readonly rnUploadTaskSnap: FirebaseStorageTypes.TaskSnapshot;
@@ -11,8 +12,8 @@ export default class OFUploadTaskSnapshot implements IUploadTaskSnapshot {
 
     constructor(rnUploadTaskSnap: FirebaseStorageTypes.TaskSnapshot) {
         this.rnUploadTaskSnap = rnUploadTaskSnap;
-        this.ref = new OFReference(this.rnUploadTaskSnap.ref);
-        this.task = new OFUploadTask(this.rnUploadTaskSnap.task);
+        this.ref = toOFReference(this.rnUploadTaskSnap.ref);
+        this.task = toOFUploadTask(this.rnUploadTaskSnap.task);
     }
     
 }
