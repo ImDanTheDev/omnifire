@@ -14,4 +14,9 @@ export default class OFStorage implements IStorage {
         const rnRef: FirebaseStorageTypes.Reference = this.rnStorage.ref(path);
         return new OFReference(rnRef);
     }
+
+    refFromURL(url: string): IReference {
+        const rnRef: FirebaseStorageTypes.Reference = this.rnStorage.refFromURL(url);
+        return new OFReference(rnRef);
+    }
 }

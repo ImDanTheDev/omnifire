@@ -15,4 +15,8 @@ export default class OFStorage implements IStorage {
         return new OFReference(webRef);
     }
 
+    refFromURL(url: string): IReference {
+        const webRef: firebase.storage.Reference = this.storage.refFromURL(url);
+        return new OFReference(webRef);
+    }
 }
