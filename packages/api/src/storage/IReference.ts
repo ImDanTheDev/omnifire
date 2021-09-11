@@ -8,5 +8,6 @@ export default interface IReference {
     getDownloadURL: () => Promise<any>;
     getMetadata: () => Promise<any>;
     put: (data: Blob | Uint8Array | ArrayBuffer, metadata?: OFUploadMetadata) => IUploadTask;
+    putFile: (filePath: string, metadata?: OFUploadMetadata) => IUploadTask;
     updateMetadata: (metadata: OFSettableMetadata) => Promise<any>;
 }

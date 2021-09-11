@@ -32,6 +32,10 @@ export default class OFReference implements IReference {
         return new OFUploadTask(webUploadTask);
     }
 
+    putFile(filePath: string, metadata?: OFUploadMetadata | undefined): IUploadTask {
+        throw new Error(`@omnifire/web does not support 'putFile'. Use 'put' instead.`);
+    }
+
     async updateMetadata(metadata: OFSettableMetadata): Promise<any> {
         return this.webRef.updateMetadata(metadata);
     }

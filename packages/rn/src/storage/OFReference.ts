@@ -1,6 +1,5 @@
 import {FirebaseStorageTypes} from '@react-native-firebase/storage';
 import { IReference, IUploadTask, OFSettableMetadata, OFUploadMetadata } from "@omnifire/api";
-import OFUploadTask from './OFUploadTask';
 import { toOFReference, toOFUploadTask } from './utils';
 
 export default class OFReference implements IReference {
@@ -31,6 +30,11 @@ export default class OFReference implements IReference {
 
     put(data: Blob | Uint8Array | ArrayBuffer, metadata?: OFUploadMetadata | undefined): IUploadTask {
         const rnUploadTask = this.rnRef.put(data, metadata);
+        return toOFUploadTask(rnUploadTask);
+    }
+
+    putFile(filePath: string, metadata?: OFUploadMetadata | undefined): IUploadTask {
+        const rnUploadTask = this.rnRef.putFile(filePath, metadata);
         return toOFUploadTask(rnUploadTask);
     }
 
