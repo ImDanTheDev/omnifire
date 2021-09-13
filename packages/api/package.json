@@ -1,6 +1,6 @@
 {
   "name": "@omnifire/api",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Consistent API layer to adapt Firebase libraries.",
   "author": "",
   "repository": {
