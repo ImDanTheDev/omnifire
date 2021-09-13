@@ -14,6 +14,7 @@ import IFirestore from "./IFirestore";
 import IQuery from "./IQuery";
 import IQueryDocumentSnapshot from "./IQueryDocumentSnapshot";
 import IQuerySnapshot from "./IQuerySnapshot";
+import OFFirestoreSettings from "./OFFirestoreSettings";
 
 export {
     OFDocumentData,
@@ -32,4 +33,5 @@ export {
     IQuery,
     IQueryDocumentSnapshot,
     IQuerySnapshot,
+    OFFirestoreSettings
 };

@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import { IFirestore, OFDocumentData } from '@omnifire/api';
+import { IFirestore, OFDocumentData, OFFirestoreSettings } from '@omnifire/api';
 import OFCollectionReference from './OFCollectionReference';
 
 export default class OFFirestore implements IFirestore {
@@ -9,6 +9,10 @@ export default class OFFirestore implements IFirestore {
 
     constructor() {
         this.firestore = firebase.firestore();
+    }
+
+    async settings(settings: OFFirestoreSettings): Promise<void> {
+        this.firestore.settings(settings);
     }
 
     collection(path: string): OFCollectionReference<OFDocumentData> {
